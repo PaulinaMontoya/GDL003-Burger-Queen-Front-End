@@ -1,162 +1,68 @@
-# Burger Queen
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 1. Preámbulo
+## Available Scripts
 
-[React](https://reactjs.org/), [Angular](https://angular.io/) y [Vue](https://vuejs.org/)
-son algunos de los _frameworks_ y _librerías_ de JavaScript más utilizados por
-lxs desarrolladorxs alrededor del mundo, y hay una razón para eso.
-En el contexto del navegador, [_mantener la interfaz sincronizada con el estado
-es difícil_](https://medium.com/dailyjs/the-deepest-reason-why-modern-javascript-frameworks-exist-933b86ebc445).
-Al elegir un _framework_ o _librería_ para nuestra interfaz, nos apoyamos en una
-serie de convenciones e implementaciones _probadas_ y _documentadas_ para
-resolver un problema común a toda interfaz web. Esto nos permite concentrarnos
-mejor (dedicar más tiempo) en las caractrísticas _específicas_ de
-nuestra aplicación.
+In the project directory, you can run:
 
-Cuando elegimos una de estas tecnologías no solo importamos un pedacito de
-código para reusarlo (lo cuál es un gran valor per se), si no que adoptamos una
-**arquitectura**, una serie de **principios de diseño**, un **paradigma**, unas
-**abstracciones**, un **vocabulario**, una **comunidad**, etc...
+### `npm start`
 
-Como desarrolladora Front-end, estos kits de desarrollo pueden resultarte
-de gran ayuda para implementar rápidamente características de los proyectos en
-los que trabajes.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 2. Resumen del proyecto
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-Esta vez tenemos un proyecto 100% por encargo. Si bien siempre puedes (y debes)
-hacer sugerencias de mejoras y/o cambios, muchas veces trabajarás en proyectos
-en los que primero hay que asegurarse de cumplir con lo requerido.
+### `npm test`
 
-Un pequeño restaurante de hamburguesas, que está creciendo, necesita una
-interfaz en la que puedan tomar pedidos usando una _tablet_, y enviarlos
-a la cocina para que se preparen ordenada y eficientemente (a través de un
-  _backend_ del que nos darán detalles más adelante).
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
+### `npm run build`
 
-Esta es la información que tenemos del cliente:
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> Somos **Burguer Queen**, una cadena de comida 24hrs.
->
-> Nuestra propuesta de servicio 24hrs ha tenido muy buena acogida y, para
-> seguir creciendo, necesitamos un sistema que nos ayude a tomar los pedidos de
-> nuestros clientes.
->
-> Tenemos 2 menús: uno muy sencillo para el desayuno:
->
-> | Ítem                      |Precio $|
-> |---------------------------|------|
-> | Café americano            |    5 |
-> | Café con leche            |    7 |
-> | Sandwich de jamón y queso |   10 |
-> | Jugo de frutas natural              |    7 |
->
-> Y otro menú para el resto del día:
->
-> | Ítem                      |Precio|
-> |---------------------------|------|
-> |**Hamburguesas**           |   **$**   |
-> |Hamburguesa simple         |    10|
-> |Hamburguesa doble          |    15|
-> |**Acompañamientos**        |   **$**   |
-> |Papas fritas               |     5|
-> |Aros de cebolla            |     5|
-> |**Para tomar**             |   **$**   |
-> |Agua 500ml                 |     5|
-> |Agua 750ml                 |     7|
-> |Bebida/gaseosa 500ml       |     7|
-> |Bebida/gaseosa 750ml       |     10|
->
-> **Importante:** Los clientes pueden escoger entre hamburguesas de res,
-> de pollo, o vegetariana. Además, por $ 1 adicional, pueden agregarle queso
-> o huevo.
->
-> Nuestros clientes son bastante indecisos, por lo que es muy común que cambien
->el su pedido varias veces antes de finalizarlo.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-La interfaz debe mostrar los dos menús (desayuno y resto del día), cada uno
-con todos sus _productos_. El usuario debe poder ir eligiendo qué _productos_
-agregar y la interfaz debe ir mostrando el _resumen del pedido_ con el
-costo total.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
+### `npm run eject`
 
-## 3. Objetivos de aprendizaje
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-1. El objetivo principal de este proyecto es aprender a construir una _interfaz web_ usando
-   el _framework_ elegido (En este caso vamos a preferir usar React). Este Framework resuelve el problema de: **cómo mantener la interfaz y el estado
-   sincronizados**. Así que esta experiencia espera familiarizarte con el
-   concepto de _estado de pantalla_, y cómo cada cambio sobre el estado se va a
-   ir reflejando en la interfaz (por ejemplo, cada vez que agregamos un
-   _producto_ a un _pedido_, la interfaz debe actualizar la lista del pedido y
-   el total).
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-2. La interfaz debe estar diseñada específicamente para correr en
-   **tablets**.
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## 4. Consideraciones generales
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Trabaja en una historia hasta terminarla antes de pasar a la siguiente. Trabaja
-hasta la historia que puedas en el tiempo especificado.
+## Learn More
 
-La aplicación debe ser un _Single Page App_. Los pedidos los tomaremos desde una
-_tablet_, pero **no queremos una app nativa**, sino una web app que sea
-**responsive** y pueda funcionar **offline**.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Necesitamos pensar bien en el aspecto UX de quienes van a tomar los pedidos,
- el tamaño y aspecto de los botones, la visibilidad del estado actual del
- pedido, etc.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-La aplicación debe hacer uso de `npm-scripts` y contar con scripts `start`,
-`test`, `build` y `deploy`, que se encarguen de arrancar, correr las pruebas,
-empaquetar y desplegar la aplicación respectivamente.
+### Code Splitting
 
-Los tests unitarios deben indicar el porcentaje de coverage, al final se debe poder explicar el porcentaje logrado y porqué.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
+### Analyzing the Bundle Size
 
-## 5. Conexión con el Back-end
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Tu equipo está conformado por 2 desarrolladoras Front-end y 2 desarrolladoras Back-end, cada pareja contará con su propio repositorio.
+### Making a Progressive Web App
 
-El equipo de Front-end va a consumir los _endpoints_ que el equipo de Back-end expondrá, tanto para crear, actualizar, obtener y eliminar data. Reúnanse en equipo y decidan cuales serán estos _endpoints_ y cómo los usarán.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-Este proyecto no manejará Autenticación de usuarios pero la comunicación entre el Front-end y el Back-end será protegida a través de un _Token_ que en el equipo van a definir en forma. Este _Token_ validará que la información que llega al Back-end es la correspondiente a la de su Front-end. Esta estrategia hace que la aplicación sea más segura de usar.
+### Advanced Configuration
 
-El _Token_ al ser una variable que solo debe ser conocida por lxs usuarixs no puede escribirse en texto plano, tendremos que investigar sobre [Variables de Entorno](https://en.wikipedia.org/wiki/Environment_variable) para poder protegerlos.
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-Es muy importante mantener activa la comunicación entre las parejas Front-end y Back-end, esto ayudará a prevenir inconsistencias al momento de mostrar los 2 proyectos funcionando.
+### Deployment
 
-## 6. Pistas, tips y lecturas complementarias
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### Primeros pasos
+### `npm run build` fails to minify
 
-Al usar `create-react-app` en el directorio del proyecto recibirás un
-error diciendo que hay archivos que podrían presentar un conflicto. Para evitar
-este problema puedes crear una nueva app usando `create-react-app` y de ahí
-_mezclarla_ con la carpeta del proyecto:
-
-```sh
-# si estabase en la carpeta del proyecto, salimos a la carpeta de más arriba
-cd ..
-
-create-react-app burger-queen-tmp
-cp -r burger-queen/* burger-queen-tmp/
-cp -r burger-queen-tmp/.gitignore burger-queen-tmp/* burger-queen/
-rm -rf burger-queen-tmp
-cd burger-queen
-```
-
-### Otros recursos
-
-#### Frameworks / libraries
-
-* [React](https://reactjs.org/)
-
-#### Herramientas
-
-* [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [Babel](https://babeljs.io/)
-* [webpack](https://webpack.js.org/)
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
