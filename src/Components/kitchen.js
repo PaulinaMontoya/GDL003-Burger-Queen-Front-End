@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+//import buttonKitchen from '../imgs/breackfast-choose.png';
+
 
 class Kitchen extends Component {
 
     render() {
         return (
-            <div align="center">
-               
+            <div>
                Kitchen
-                
             </div>
         )
     }
