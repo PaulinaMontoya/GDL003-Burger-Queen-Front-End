@@ -6,13 +6,10 @@ class Home extends Component {
     render() {
         return (
             <div align="center">
-                <Link to="/menu">
-                    <button>Waiter</button>
+                <Link to="/intro">
+                    <button>Enter</button>
                 </Link>
                 <p />
-                <Link to="/kitchen">
-                    <button>Kitchen</button>
-                </Link>
             </div>
         )
     }
