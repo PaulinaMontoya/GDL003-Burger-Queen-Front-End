@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import classicBurger from '../imgs/dinner-classicburger.png';
 import doubleBurger from '../imgs/dinner-doubleburger.png';
 import baconBurger from '../imgs/dinner-baconburger.png';
@@ -55,6 +56,18 @@ class AllDayMenu extends Component {
           </ul>
         </div>
 
+    render() {
+        return (
+            <div align="center">    
+                <Link to="/menu">
+                    <button>Menu</button>
+                </Link>    
+                <p />
+                <button>Send to kitchen</button>
+            </div>
+            
+        )
+    }
         <div>
           <div>
             <ul>
