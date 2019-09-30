@@ -55,9 +55,6 @@ class AllDayMenu extends Component {
             </li>
           </ul>
         </div>
-
-    render() {
-        return (
             <div align="center">    
                 <Link to="/menu">
                     <button>Menu</button>
@@ -66,15 +63,12 @@ class AllDayMenu extends Component {
                 <button>Send to kitchen</button>
             </div>
             
-        )
-    }
         <div>
           <div>
             <ul>
               <li>
               </li>
             </ul>
-            <button>Send to kitchen</button>
           </div>
         </div>
       </div>
