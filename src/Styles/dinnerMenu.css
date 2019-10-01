@@ -2,9 +2,17 @@
 
 
 .txtDinnerMenu{
-    text-align: left;
+    text-align: center;
     font-family: 'Neucha';
     font-size: 45px;
     color: #58524C;
     margin: 55px 0 35px 0;
+}
+.cointenerComandaMenuDinner{
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+}
+.buttonAndComanda{
+    display: flex;
 }
