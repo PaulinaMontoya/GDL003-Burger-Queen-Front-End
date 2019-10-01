@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.txtDinnerMenu{
+    text-align: left;
+    font-family: 'Neucha';
+    font-size: 45px;
+    color: #58524C;
+    margin: 55px 0 35px 0;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.cointenerButtonProduct{
+    display: flex;
+    background: beige;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5%;
+}
+.imgButtonProduct{
+    max-height: 80px;
+}
+.nameButtonProduct{
+    font-family: 'Neucha';
+    font-size: 25px;
+    color: #58524C;
+}
+.buttonPlusProduct{
+    width: 50px;
+    height: 50px;
+    margin: 19px 0 0 15px;
+    background: #56cdb0;
+    font-family: 'Neucha';
+    font-size: 35px;
+    color: #58524C;
+    border-radius: 50%;
+    border: none;
+}

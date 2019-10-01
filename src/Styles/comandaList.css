@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.cointenerComanda{
+    font-family: 'Neucha';
+    font-size: 45px;
+    color: #58524c;
+    background: beige;
+    width: 500px;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    border-radius: 5%;
+}
+.numberTable{
+    font-size: 30px;
+    margin: 0;
+}
+.inputNumberTable{
+    font-family: 'Neucha';
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 50px;
+    border: solid #58524C 1px;
+    background: #F5EAD6;
+    color: #58524C;
+}
+.total{
+    font-size: 35px;
+    border-top: #58524C 1px;
+    text-align: center;
+}
+.buttonSendToKitchen{
+    margin-top: 20px;
+    width: 240px;
+}

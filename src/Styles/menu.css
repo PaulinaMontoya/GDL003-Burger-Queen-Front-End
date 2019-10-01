@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.txtMenu{
+    text-align: center;
+    font-family: 'Neucha';
+    font-size: 45px;
+    color: #58524C;
+    margin: 55px 0 0 0;
+}
+.cointenerMenu{
+    text-align: center;
+    display: flex;
+    margin-top: 25px;
+}
+.txtMenu{
+    font-family: 'Neucha';
+    font-size: 35px;
+    color: #58524C;
+}
+.buttonsMenu{
+    margin-top: 20px;
+    width: 200px;
+}
+.goBreakfastMenu{
+    padding: 45px 0 0 280px;
+}
+.menuBreackfastImg{
+    margin-top: 25px;
+    max-width: 75%;
+    text-align: center;
+}
+.goDinnerMenu{
+    padding: 45px 280px 0 0;
+}
+.menuDinnerImg{
+    max-width: 75%;
+    text-align: center;
+}

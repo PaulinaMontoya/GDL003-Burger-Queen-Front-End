@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.txtWelcome{
+    text-align: center;
+    font-family: 'Neucha';
+    font-size: 45px;
+    color: #58524C;
+    margin: 55px 0 0 0;
+}
+.txtIntro{
+    text-align: center;
+    font-family: 'Neucha';
+    font-size: 35px;
+    color: #58524C;
+    margin: 0 0 30px 0;
+}
+.cointenerIntro{
+    text-align: center;
+    display: flex;
+    margin-top: 25px;
+}
+.buttonsIntro{
+    margin-top: 20px;
+    width: 200px;
+}
+.wiatressBlock{
+  padding: 45px 0 0 280px;
+}
+.waitressImg{
+    max-width: 35%;
+    text-align: center;
+}
+.chefBlock{
+    padding: 45px 280px 0 0;
+}
+.chefImg{
+    max-width: 35%;
+}

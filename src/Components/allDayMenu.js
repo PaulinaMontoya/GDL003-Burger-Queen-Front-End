@@ -1,4 +1,14 @@
 import React, { Component } from 'react';
+import '../Styles/buttonProduct.css';
+import '../Styles/comandaList.css';
+import '../Styles/dinnerMenu.css';
+import HeaderMenu from '../Components/HeaderMenu.js';
+import ButtonProduct from '../Components/ButtonProduct.js';
+import classicBurger from '../imgs/dinner-classicburger.png';
+import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
+import '../Styles/buttonProduct.css';
+{
+  /*
 import { Link } from 'react-router-dom'
 import classicBurger from '../imgs/dinner-classicburger.png';
 import doubleBurger from '../imgs/dinner-doubleburger.png';
@@ -9,13 +19,38 @@ import soda750 from '../imgs/dinner-soda750ml.png';
 import soda500 from '../imgs/dinner-soda500ml.png';
 import water750 from '../imgs/dinner-water750ml.png';
 import water500 from '../imgs/dinner-water500ml.png';
+*/
+}
 
 class AllDayMenu extends Component {
   render() {
     return (
-      <div>
+      <div className="headerMenu">
+        <HeaderMenu />
         <div>
-          <p> DINNER MENU </p>
+          <p className="txtDinnerMenu"> Dinner Menu </p>
+
+          <ButtonProduct/>
+
+
+        </div>
+        <div className="cointenerComanda">
+          <p className="numberTable">Number of table</p>
+          <input className="inputNumberTable" type="text"></input>
+          <ul>
+            <li>
+            </li>
+
+            <li>
+            </li>
+          </ul>
+          <div className="total">
+            Total: XXXX
+          </div>
+          <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen"></img>
+        </div>
+
+          {/*
           <ul>
             <li>
               <img src={classicBurger} alt="" className="dinnerMenuImg"></img>
@@ -54,24 +89,8 @@ class AllDayMenu extends Component {
               <span>Water 500 ml.</span>
             </li>
           </ul>
-        </div>
-            <div align="center">    
-                <Link to="/menu">
-                    <button>Menu</button>
-                </Link>    
-                <p />
-                <button>Send to kitchen</button>
-            </div>
-            
-        <div>
-          <div>
-            <ul>
-              <li>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          */}
+      </div>    
     );
   }
 }
