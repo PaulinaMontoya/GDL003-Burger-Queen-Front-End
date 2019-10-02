@@ -10,6 +10,16 @@ import '../Styles/buttonProduct.css';
 
 
 class AllDayMenu extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      price:"",
+      dish: ""
+    }
+  }
+  
+
+
   render() {
     return (
       <div className="headerMenu">
@@ -17,11 +27,11 @@ class AllDayMenu extends Component {
         <div className="cointenerComandaMenuDinner">
           <p className="txtDinnerMenu"> Dinner Menu </p>
           <div className="buttonAndComanda">
-          <ButtonProduct/>
-          <Comanda/>
+            <ButtonProduct />
+            <Comanda func={this.props}/>
           </div>
         </div>
-      </div>    
+      </div>
     );
   }
 }
