@@ -4,14 +4,18 @@ import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
 import { Link } from 'react-router-dom';
 
 class Comanda extends Component {
+
+
   render() {
+    const { dishName, dishPrice } = this.props;
+
     return (
       <div className="cointenerComanda">
         <p className="numberTable">Number of table</p>
         <input className="inputNumberTable" type="text"></input>
         <div>
           <ul>
-            <li></li>
+            <li>{dishName + dishPrice}</li>
           </ul>
           <p className="total">Total: XXXX</p>
         </div>
