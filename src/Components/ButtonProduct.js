@@ -12,11 +12,6 @@ class ButtonProduct extends Component {
 
     }
   }
-
-  getValues(dish, price) {
-
-    console.log(dish, price)
-
   }
 
   render() {
