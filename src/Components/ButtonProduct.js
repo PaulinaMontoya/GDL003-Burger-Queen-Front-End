@@ -12,7 +12,7 @@ class ButtonProduct extends Component {
 
     }
   }
-  }
+
 
   render() {
     return (
