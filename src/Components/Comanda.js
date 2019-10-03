@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 class Comanda extends Component {
 
   render() {
-    const { dishName, dishPrice } = this.props;
-
+   
     return (
       <div className="cointenerComanda">
         <p className="numberTable">Number of table</p>

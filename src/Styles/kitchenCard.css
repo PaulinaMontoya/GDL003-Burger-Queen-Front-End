@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+.cointenerCard{
+    text-align: center;
+    font-family: 'Neucha';
+    font-size: 25px;
+    width: 20%;
+    background: beige;
+    padding: 30px;
+}
+.listCard{
+    list-style:none;
+}

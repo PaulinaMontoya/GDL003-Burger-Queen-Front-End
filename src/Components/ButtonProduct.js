@@ -17,7 +17,7 @@ class ButtonProduct extends Component {
 
 
   render() {
-    const {addProduct} = this.props;
+  
 
     return (
 

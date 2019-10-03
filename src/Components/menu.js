@@ -5,11 +5,13 @@ import buttonDinner from '../imgs/button-dinner.png';
 import imgBreakfastMenu from '../imgs/breackfast-choose.png';
 import buttonBreakfast from '../imgs/button-breakfast.png';
 import '../Styles/menu.css';
+import HeaderChooseMenu from '../Components/HeaderChooseMenu.js';
 
 class Menu extends Component {
   render() {
     return (
       <div>
+      <HeaderChooseMenu/>  
       <p className="txtMenu">Choose a menu</p>
       <div className="cointenerMenu">
         <div className="goBreakfastMenu">           
