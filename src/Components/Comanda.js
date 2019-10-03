@@ -7,15 +7,11 @@ class Comanda extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      price:"",
-      dish: "",
-      total: 10
+      total1: 0
     };
+
   }
-  test(){
-    console.log("test")
-  }
-  
+
   render() {
     return (
       <div className="cointenerComanda">
@@ -23,9 +19,13 @@ class Comanda extends Component {
         <input className="inputNumberTable" type="text"></input>
         <div>
           <ul>
-            <li> {this.state.dish}</li>
+            {this.props.list.map((item, index) =>
+              <li>{item.dish} - {item.price}
+                <button onClick={() => this.props.removeValuesMethod(index)}> - </button>
+              </li>
+            )}
           </ul>
-          <p className="total">Total: {this.state.total}</p>
+          <p className="total">Total: {this.props.total}</p>
         </div>
         <Link to="/kitchen">
           <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen"></img>

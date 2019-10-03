@@ -1,4 +1,4 @@
-const allDayMenu = {
+const Dinner = {
     'datos': [
         { 'id': 1,
         'img': 'https://i.ibb.co/C0DyFq2/dinner-classicburger.png',
@@ -47,7 +47,7 @@ const allDayMenu = {
         },
     ]
     }
-    export default allDayMenu
+    export default Dinner
  
  
  

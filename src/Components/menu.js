@@ -22,7 +22,7 @@ class Menu extends Component {
         <div className="goDinnerMenu">
           <img src={imgDinnerMenu} alt="" className="menuDinnerImg"></img>
           <br />
-          <Link to="/allDayMenu">
+          <Link to="/dinner">
             <img src={buttonDinner} alt="" className="buttonsMenu"></img>
           </Link>
         </div>
