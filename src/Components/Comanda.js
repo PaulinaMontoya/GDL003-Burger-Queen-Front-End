@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 class Comanda extends Component {
 
-
   render() {
     const { dishName, dishPrice } = this.props;
 
@@ -15,9 +14,14 @@ class Comanda extends Component {
         <input className="inputNumberTable" type="text"></input>
         <div>
           <ul>
-            <li>{dishName + dishPrice}</li>
+
+            {this.props.list.map((item, index) =>
+              <li>{item.dish} - {item.price}
+                <button onClick={() => this.props.removeValuesMethod(index)}> - </button>
+              </li>
+            )}
           </ul>
-          <p className="total">Total: XXXX</p>
+          <p className="total">Total: {this.props.total}</p>
         </div>
         <Link to="/kitchen">
           <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen"></img>
