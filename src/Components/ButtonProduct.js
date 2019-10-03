@@ -3,6 +3,7 @@ import '../Styles/buttonProduct.css';
 //import classicBurger from '../imgs/dinner-classicburger.png';
 import menu from "../menuData.js";
 
+
 class ButtonProduct extends Component {
   constructor(props) {
     super(props);
@@ -14,8 +15,12 @@ class ButtonProduct extends Component {
   }
 
 
+
   render() {
+    const {addProduct} = this.props;
+
     return (
+
       <div >
         {menu.datos.map((item) =>
           <div className="cointenerButtonProduct" key={item.id}>

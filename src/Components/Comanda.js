@@ -4,21 +4,17 @@ import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
 import { Link } from 'react-router-dom';
 
 class Comanda extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total1: 0
-    };
-
-  }
 
   render() {
+    const { dishName, dishPrice } = this.props;
+
     return (
       <div className="cointenerComanda">
         <p className="numberTable">Number of table</p>
         <input className="inputNumberTable" type="text"></input>
         <div>
           <ul>
+
             {this.props.list.map((item, index) =>
               <li>{item.dish} - {item.price}
                 <button onClick={() => this.props.removeValuesMethod(index)}> - </button>
