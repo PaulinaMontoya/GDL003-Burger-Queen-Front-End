@@ -45,8 +45,31 @@ const Dinner = {
         'dish': 'Water 500ml.',
         'price': '20'
         },
+    ],
+    'breakfast':[
+        { 'id': 11,
+        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
+        'dish': 'Cafe americano',
+        'price': '20'
+        },
+        { 'id': 12,
+        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
+        'dish': 'Cafe con leche',
+        'price': '20'
+        },
+        {'id': 13,
+        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
+        'dish': 'Sandwich de jamon y queso',
+        'price': '20'
+        },
+        {'id': 14,
+        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
+        'dish': 'Jugo de frutas natural',
+        'price': '20'
+        },
     ]
     }
+    
     export default Dinner
  
  
