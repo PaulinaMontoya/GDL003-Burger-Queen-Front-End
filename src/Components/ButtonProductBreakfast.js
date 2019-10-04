@@ -4,14 +4,14 @@ import '../Styles/buttonProduct.css';
 import menu from "../menuData.js";
 
 
-class ButtonProduct extends Component {
+class ButtonProductBreakfast extends Component {
 
   render() {
   
     return (
 
       <div >
-        {menu.datos.map((item) =>
+        {menu.breakfast.map((item) =>
           <div className="cointenerButtonProduct" key={item.id}>
             <img src={item.img} alt={item.dish} className="imgButtonProduct"></img>
             <p className="nameButtonProduct">{item.dish}</p>
@@ -24,4 +24,4 @@ class ButtonProduct extends Component {
   }
 }
 
-export default ButtonProduct;
+export default ButtonProductBreakfast;
