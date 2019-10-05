@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../Styles/kitchenCard.css';
-
+import buttonDone from '../imgs/button-done.png';
 
 class KitchenCard extends Component {
 
@@ -11,7 +11,7 @@ class KitchenCard extends Component {
                 <ul>
                     <li className="listCard">XXXXXX</li>
                 </ul>
-                <button>Alrady</button>
+                <img src={buttonDone} alt="" className="buttonDone"></img>
             </div>
         )
     }

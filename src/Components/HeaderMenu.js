@@ -8,7 +8,7 @@ class HeaderMenu extends Component {
   render() {
     return (
       <div className="cointenerHeaderMenu">
-        <p className="userHeaderMenu">Waitress XXX</p>
+        <p className="userHeaderMenu">User : XXX</p>
         <div className="buttonsHeader">
         <Link to="/menu">
           <img src={buttonMenus} alt="" className="buttonHeaderMenu"></img>

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+.cointenerHeaderMenu{
+    background: #4ebb9d;
+    display: flex;
+    padding: 20px;
+
+}
+.userHeaderMenu{
+    max-resolution: 0 600px 0 40px;
+}
+.buttonsHeader{
+    margin: 0 600px 0 0;
+}
+.buttonHeaderMenu{
+    width: 150px;
+    margin: 10px;
+}
+.userHeaderMenu{
+    font-family: 'Neucha';
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}

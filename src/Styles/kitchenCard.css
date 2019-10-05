@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
 
+
+.cointenerKitchenCards{
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    
+}
 .cointenerCard{
     text-align: center;
     font-family: 'Neucha';
@@ -7,7 +14,22 @@
     width: 20%;
     background: beige;
     padding: 30px;
+    margin: 20px;
+
 }
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
 .listCard{
     list-style:none;
+}
+.buttonDone{
+    width: 150px;
+    margin: 10px;
 }

@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import buttonLogout from '../imgs/button-logout.png';
-import buttonMenus from '../imgs/button-menus.png';
-import '../Styles/headerChooseMenu.css';
+import '../Styles/headerMenu.css';
 
 class HeaderIntro extends Component {
   render() {
     return (
       <div className="cointenerHeaderMenu">
-        <p className="userHeaderMenu">User: XXX</p>
+        <p className="userHeaderMenu">User : XXX</p>
         <div className="buttonsHeader">
           <Link to="/">
-            <img src={buttonLogout} alt="" className="buttonHeaderKitchen"></img>
+            <img src={buttonLogout} alt="" className="buttonHeaderMenu"></img>
           </Link>
         </div>
       </div>

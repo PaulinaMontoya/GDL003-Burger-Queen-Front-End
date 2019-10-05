@@ -17,6 +17,7 @@ class ButtonProduct extends Component {
             <p className="nameButtonProduct">{item.dish}</p>
             <p className="nameButtonProduct">${item.price}</p>
             <button className="buttonPlusProduct" onClick={() => this.props.getValuesMethod(item.id)}>+</button>
+            
           </div>
         )}
       </div>

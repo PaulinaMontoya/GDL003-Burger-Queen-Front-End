@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-//import buttonKitchen from '../imgs/breackfast-choose.png';
 import HeaderKitchen from '../Components/HeaderKitchen.js';
 import KitchenCard from '../Components/KitchenCard.js';
+import '../Styles/kitchenCard.css';
 
 
 class Kitchen extends Component {
@@ -10,8 +10,11 @@ class Kitchen extends Component {
         return (
             <div>
                 <HeaderKitchen />
+                <div className="cointenerKitchenCards">
                 <KitchenCard />
-            
+                <KitchenCard />
+                <KitchenCard />
+                </div>
 
             </div>
         )

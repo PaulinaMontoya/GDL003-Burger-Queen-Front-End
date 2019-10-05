@@ -5,10 +5,12 @@
     font-size: 45px;
     color: #58524c;
     background: beige;
-    width: 500px;
+    width: 800px;
+    height: auto;
     text-align: center;
     padding: 50px 20px 20px 20px;
     border-radius: 5%;
+    margin: 150px 50px 0 10px;
 }
 .numberTable{
     font-size: 30px;
@@ -25,6 +27,21 @@
     border: solid #58524C 1px;
     background: #F5EAD6;
     color: #58524C;
+}
+.listText{
+    font-size: 25px;
+    list-style:none;
+}
+.buttonDelete{
+    width: 50px;
+    height: 50px;
+    margin: 19px 0 0 15px;
+    background: #56cdb0;
+    font-family: 'Neucha';
+    font-size: 35px;
+    color: #58524C;
+    border-radius: 50%;
+    border: none;
 }
 .total{
     font-size: 35px;

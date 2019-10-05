@@ -15,12 +15,12 @@ class Comanda extends Component {
           <ul>
 
             {this.props.list.map((item, index) =>
-              <li>{item.dish} - {item.price}
-                <button onClick={() => this.props.removeValuesMethod(index)}> - </button>
+              <li className="listText">{item.dish}  ${item.price}
+                <button className="buttonDelete" onClick={() => this.props.removeValuesMethod(index)}> - </button>
               </li>
             )}
           </ul>
-          <p className="total">Total: {this.props.total}</p>
+          <p className="total">Total: ${this.props.total}</p>
         </div>
         <Link to="/kitchen">
           <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen"></img>

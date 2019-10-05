@@ -25,10 +25,10 @@ class Dinner extends Component {
     const listConc = this.state.list
 
     listConc.push({
-      dish: data.dish, 
+      dish: data.dish,
       price: data.price
     })
-    
+
     this.setState({
       total: +this.state.total + +data.price,
       list: listConc
@@ -38,11 +38,11 @@ class Dinner extends Component {
   removeValues = (index) => {
     const listConc = this.state.list
     const price = listConc[index].price
-    listConc.splice(index,1)
+    listConc.splice(index, 1)
     this.setState({
       total: +this.state.total - +price,
       list: listConc
-    })    
+    })
   }
 
 
@@ -51,11 +51,13 @@ class Dinner extends Component {
       <div className="headerMenu">
         <HeaderMenu />
         <div className="cointenerComandaMenuDinner">
-          <p className="txtDinnerMenu"> Dinner Menu {this.state.count}</p>
-          <div className="buttonAndComanda">
-            <ButtonProduct getValuesMethod={this.getValues} 
-              submitValuesMethod={this.submitValues} />
 
+          <div className="buttonAndComanda">
+            <div>
+              <p className="txtDinnerMenu"> Dinner Menu {this.state.count}</p>
+              <ButtonProduct getValuesMethod={this.getValues}
+                submitValuesMethod={this.submitValues} />
+            </div>
             <Comanda submitValuesMethod={this.submitValues}
               removeValuesMethod={this.removeValues}
               total={this.state.total}

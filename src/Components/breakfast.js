@@ -51,11 +51,12 @@ class Breakfast extends Component {
       <div className="headerMenu">
         <HeaderMenu />
         <div className="cointenerComandaMenuDinner">
-          <p className="txtDinnerMenu"> Breakfast Menu {this.state.count}</p>
           <div className="buttonAndComanda">
+            <div>
+          <p className="txtDinnerMenu"> Breakfast Menu {this.state.count}</p>
             <ButtonProductBreakfast getValuesMethod={this.getValues} 
               submitValuesMethod={this.submitValues} />
-
+</div>
             <ComandaBreakfast submitValuesMethod={this.submitValues}
               removeValuesMethod={this.removeValues}
               total={this.state.total}

@@ -47,25 +47,30 @@ const Dinner = {
         },
     ],
     'breakfast':[
-        { 'id': 11,
-        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
-        'dish': 'Cafe americano',
-        'price': '20'
+        {'id': 10,
+        'img': 'https://i.ibb.co/BNhDk3L/breackfast-sandwish.png',
+        'dish': 'Sandwish',
+        'price': '80'
         },
-        { 'id': 12,
-        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
-        'dish': 'Cafe con leche',
-        'price': '20'
+        {'id': 11,
+        'img': 'https://i.ibb.co/RQ0KNNr/breackfast-eggandbacon.png',
+        'dish': 'Eggs with bacon',
+        'price': '100'
         },
-        {'id': 13,
-        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
-        'dish': 'Sandwich de jamon y queso',
+        {'id': 12,
+        'img': 'https://i.ibb.co/1bs8rzZ/breackfast-pancakes.png',
+        'dish': 'Pancakes',
+        'price': '100'
+        },
+        { 'id': 13,
+        'img': 'https://i.ibb.co/NLVXcrS/breackfast-coffe.png',
+        'dish': 'Coffe',
         'price': '20'
         },
         {'id': 14,
-        'img': 'https://i.ibb.co/dJqShJD/dinner-water500ml.png',
-        'dish': 'Jugo de frutas natural',
-        'price': '20'
+        'img': 'https://i.ibb.co/ChwfSjJ/breackfast-juice.png',
+        'dish': 'Orange juice',
+        'price': '35'
         },
     ]
     }
