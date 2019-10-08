@@ -49,7 +49,7 @@ const Dinner = {
     'breakfast':[
         {'id': 10,
         'img': 'https://i.ibb.co/BNhDk3L/breackfast-sandwish.png',
-        'dish': 'Sandwish',
+        'dish': 'Sandwich',
         'price': '80'
         },
         {'id': 11,

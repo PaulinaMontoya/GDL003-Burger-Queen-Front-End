@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
 
 .cointenerHeaderMenu{
-    background: #4ebb9d;
+    background: #EAD4B0;
     display: flex;
     padding: 30px;
 }
@@ -16,5 +16,5 @@
 .userHeaderMenu{
     font-family: 'Neucha';
     font-size: 30px;
-    color: beige;  
+    color: #58524C;  
 }

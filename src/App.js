@@ -6,7 +6,7 @@ import Routes from './routes'
 
 function App() {
   return (
-    <div className="">
+    <div className="backgrounApp">
       <Routes />
     </div>
   );

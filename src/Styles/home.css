@@ -12,8 +12,8 @@
     margin: 0 auto;
 }
 .logo{
-    margin: 55px 0 0 0;
-    max-width: 15%;
+    margin: 30px 0 0 0;
+    max-width: 25%;
     text-align: center;
 }
 .userName{
@@ -24,7 +24,7 @@
     width: 30%;
     padding: 20px;
     border-radius: 50px;
-    border: solid #58524C 1px;
+    border: solid #EAD4B0;
     background: #F5EAD6;
     color: #58524C;
 }
