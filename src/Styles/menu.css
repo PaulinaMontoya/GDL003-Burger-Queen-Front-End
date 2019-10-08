@@ -23,17 +23,17 @@
     width: 200px;
 }
 .goBreakfastMenu{
-    padding: 45px 0 0 280px;
+    margin: 0 50px 0 500px;
 }
 .menuBreackfastImg{
     margin-top: 25px;
-    max-width: 75%;
+    width: 200px;
     text-align: center;
 }
 .goDinnerMenu{
-    padding: 45px 280px 0 0;
+    margin: 10px 0 0 50px;
 }
 .menuDinnerImg{
-    max-width: 75%;
+    width: 200px;
     text-align: center;
 }

@@ -6,7 +6,7 @@ import '../Styles/home.css';
 //import buttonKitchen from '../imgs/button-chef.png';
 //import form from "./Components/form"
 
-class Home extends Component{
+class Home extends Component{   
 
   render() {
     return (
