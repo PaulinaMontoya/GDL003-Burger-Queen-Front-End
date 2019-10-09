@@ -3,7 +3,7 @@ import '../Styles/buttonProduct.css';
 import '../Styles/comandaList.css';
 import '../Styles/dinnerMenu.css';
 import HeaderMenu from './HeaderMenu.js';
-import menu from "../menuData.js";
+//import menu from "../menuData.js";
 //import classicBurger from '../imgs/dinner-classicburger.png';
 import '../Styles/buttonProduct.css';
 import ButtonProductBreakfast from './ButtonProductBreakfast';
@@ -14,21 +14,31 @@ class Breakfast extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      products : [],
       total: 0,
       list: []
     };
   }
+
+  componentDidMount() {
+    fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
+    })
+    .then(response => response.json())
+    .then(data => {
+        this.setState({products: data})
+      //console.log(data)
+    })
+    .catch(error => console.error(error))
+}
   //Obtener valores
   getValues = (id) => {
-    const data = menu.breakfast.find(item => item.id === id)
-
-    const listConc = this.state.list
-
+    const data = this.state.products.find(item => item.id === id)
+    //menu.breakfast.find(item => item.id === id)
+    const listConc = this.state.list  
     listConc.push({
       dish: data.dish, 
       price: data.price
     })
-    
     this.setState({
       total: +this.state.total + +data.price,
       list: listConc

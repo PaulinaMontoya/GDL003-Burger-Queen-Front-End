@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 
 class ComandaBreakfast extends Component {
 
+
+  
   render() {
-   
     return (
       <div className="cointenerComanda">
       <p className="numberTable">Number of table</p>
       <input className="inputNumberTable" type="text"></input>
       <div>
         <ul>
-
           {this.props.list.map((item, index) =>
             <li className="listText">{item.dish}  ${item.price}
               <button className="buttonDelete" onClick={() => this.props.removeValuesMethod(index)}> - </button>
