@@ -31,8 +31,8 @@ class Breakfast extends Component {
     .catch(error => console.error(error))
 }
   //Obtener valores
-  getValues = (id) => {
-    const data = this.state.products.find(item => item.id === id)
+  getValues = (_id) => {
+    const data = this.state.products.find(item => item._id === _id)
     //menu.breakfast.find(item => item.id === id)
     const listConc = this.state.list  
     listConc.push({

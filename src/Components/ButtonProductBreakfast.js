@@ -62,7 +62,7 @@ class ButtonProductBreakfast extends Component {
                         <img src={item.img} alt={item.dish} className="imgButtonProduct"></img>
                         <p className="nameButtonProduct">{item.dish}</p>
                         <p className="nameButtonProduct">${item.price}</p>
-                        <button className="buttonPlusProduct" onClick={() => this.props.getValuesMethod(item.id)}>+</button>
+                        <button className="buttonPlusProduct" onClick={() => this.props.getValuesMethod(item._id)}>+</button>
                     </div>
                 )}
             </div>

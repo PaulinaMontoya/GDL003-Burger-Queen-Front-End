@@ -6,9 +6,12 @@
     background: beige;
     width: 200px;
     padding: 20px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 5%;
     border: solid #EAD4B0;
+}
+.cointenerButtonsDinner{
+    margin: 0;
 }
 .imgButtonProduct{
     max-height: 80px;
