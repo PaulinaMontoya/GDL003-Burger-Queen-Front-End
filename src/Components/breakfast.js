@@ -11,14 +11,15 @@ import ComandaBreakfast from './ComandaBreakfast';
 
 
 class Breakfast extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      products : [],
-      total: 0,
-      list: []
-    };
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            products: [],
+            total: 0,
+            list: []
+        };
+    }
+
 
   componentDidMount() {
     fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
@@ -45,37 +46,37 @@ class Breakfast extends Component {
     });
   }
 
-  removeValues = (index) => {
-    const listConc = this.state.list
-    const price = listConc[index].price
-    listConc.splice(index,1)
-    this.setState({
-      total: +this.state.total - +price,
-      list: listConc
-    })    
-  }
+    removeValues = (index) => {
+        const listConc = this.state.list
+        const price = listConc[index].price
+        listConc.splice(index, 1)
+        this.setState({
+            total: +this.state.total - +price,
+            list: listConc
+        })
+    }
 
 
-  render() {
-    return (
-      <div className="headerMenu">
-        <HeaderMenu />
-        <div className="cointenerComandaMenuDinner">
-          <div className="buttonAndComanda">
-            <div>
-          <p className="txtDinnerMenu"> Breakfast Menu {this.state.count}</p>
-            <ButtonProductBreakfast getValuesMethod={this.getValues} 
-              submitValuesMethod={this.submitValues} />
-</div>
-            <ComandaBreakfast submitValuesMethod={this.submitValues}
-              removeValuesMethod={this.removeValues}
-              total={this.state.total}
-              list={this.state.list} />
-          </div>
-        </div>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="headerMenu">
+                <HeaderMenu />
+                <div className="cointenerComandaMenuDinner">
+                    <div className="buttonAndComanda">
+                        <div>
+                            <p className="txtDinnerMenu"> Breakfast Menu {this.state.count}</p>
+                            <ButtonProductBreakfast getValuesMethod={this.getValues}
+                                submitValuesMethod={this.submitValues} />
+                        </div>
+                        <ComandaBreakfast submitValuesMethod={this.submitValues}
+                            removeValuesMethod={this.removeValues}
+                            total={this.state.total}
+                            list={this.state.list} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Breakfast;
