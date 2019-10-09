@@ -12,7 +12,6 @@ class ButtonProductBreakfast extends Component {
         this.state = {
             products : []
         }
-        
     }
 
    /* var cors = require('cors')
@@ -22,8 +21,7 @@ class ButtonProductBreakfast extends Component {
     .get(getMenuBreakfast, cors());
 
     app.route('/menuBreakfast', cors())
-    
-    
+
         componentDidMount() {
         const headers = new Headers();
         headers.set("token", "pM170290aM291287mR270983dP160591");
@@ -42,14 +40,20 @@ class ButtonProductBreakfast extends Component {
     
     */
 
-
     componentDidMount() {
-        fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
+        fetch('http://172.17.33.47:8080/menuBreakfast', {
+           // method: 'GET',
+            //body: JSON.stringify(toMongo),
+           headers: {
+              Token: "pM170290aM291287mR270983dP160591",
+              //mode: 'no-cors',
+              //'Content-Type': 'application/json'
+            },
         })
         .then(response => response.json())
         .then(data => {
             this.setState({products: data})
-            console.log(data)
+            
         })
         .catch(error => console.error(error))
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../Styles/comandaList.css';
 import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+//import axios from 'axios';
 
 class ComandaBreakfast extends Component {
   constructor(props){
@@ -32,8 +32,9 @@ class ComandaBreakfast extends Component {
             method: 'POST',
             body: JSON.stringify(toMongo),
             headers: {
-              mode: 'no-cors',
-                'Content-Type': 'application/json'
+              Authorization: "pM170290aM291287mR270983dP160591",
+              //mode: 'no-cors',
+              //'Content-Type': 'application/json'
             },
         })
         .then(res => res.json())

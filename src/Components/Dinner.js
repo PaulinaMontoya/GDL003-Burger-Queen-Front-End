@@ -53,7 +53,7 @@ class Dinner extends Component {
         <div className="cointenerComandaMenuDinner">
 
           <div className="buttonAndComanda">
-            <div>
+            <div className="cointenerButtonsDinner">
               <p className="txtDinnerMenu"> Dinner Menu {this.state.count}</p>
               <ButtonProduct getValuesMethod={this.getValues}
                 submitValuesMethod={this.submitValues} />
