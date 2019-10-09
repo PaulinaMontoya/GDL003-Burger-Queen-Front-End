@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05db071c6c3caadde20a8b55d69701a5",
+    "revision": "e7115490ae2f2b4109d2e73784750401",
     "url": "/burger-kawaii/index.html"
   },
   {
-    "revision": "f51a719206eb86ddfa5c",
-    "url": "/burger-kawaii/static/css/main.51d50eb0.chunk.css"
+    "revision": "c753113f9ca6f45d919f",
+    "url": "/burger-kawaii/static/css/main.5fc35505.chunk.css"
   },
   {
-    "revision": "afc75ce6ce135714f423",
-    "url": "/burger-kawaii/static/js/2.6a394ff8.chunk.js"
+    "revision": "fcad251a48e1a615f65c",
+    "url": "/burger-kawaii/static/js/2.df63968c.chunk.js"
   },
   {
-    "revision": "f51a719206eb86ddfa5c",
-    "url": "/burger-kawaii/static/js/main.2e3ed67c.chunk.js"
+    "revision": "c753113f9ca6f45d919f",
+    "url": "/burger-kawaii/static/js/main.9e470f67.chunk.js"
   },
   {
     "revision": "f3d2ebb4f9caeb053c18",
@@ -44,11 +44,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-kawaii/static/media/button-waitress.fa05feff.png"
   },
   {
-    "revision": "8cfb6f157775a8918636449ff4d31ae5",
-    "url": "/burger-kawaii/static/media/circle.8cfb6f15.png"
+    "revision": "e5e7c8d674355b585c0cd747d75a8865",
+    "url": "/burger-kawaii/static/media/chef.e5e7c8d6.png"
   },
   {
     "revision": "5959d94bbf02125f8340381425038c73",
     "url": "/burger-kawaii/static/media/dinner-choose.5959d94b.png"
+  },
+  {
+    "revision": "f3f114f58d2100579f76714652973b5d",
+    "url": "/burger-kawaii/static/media/logo.f3f114f5.png"
   }
 ]);

@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/burger-kawaii/static/css/main.51d50eb0.chunk.css",
-    "main.js": "/burger-kawaii/static/js/main.2e3ed67c.chunk.js",
-    "main.js.map": "/burger-kawaii/static/js/main.2e3ed67c.chunk.js.map",
+    "main.css": "/burger-kawaii/static/css/main.5fc35505.chunk.css",
+    "main.js": "/burger-kawaii/static/js/main.9e470f67.chunk.js",
+    "main.js.map": "/burger-kawaii/static/js/main.9e470f67.chunk.js.map",
     "runtime-main.js": "/burger-kawaii/static/js/runtime-main.d897bf2e.js",
     "runtime-main.js.map": "/burger-kawaii/static/js/runtime-main.d897bf2e.js.map",
-    "static/js/2.6a394ff8.chunk.js": "/burger-kawaii/static/js/2.6a394ff8.chunk.js",
-    "static/js/2.6a394ff8.chunk.js.map": "/burger-kawaii/static/js/2.6a394ff8.chunk.js.map",
+    "static/js/2.df63968c.chunk.js": "/burger-kawaii/static/js/2.df63968c.chunk.js",
+    "static/js/2.df63968c.chunk.js.map": "/burger-kawaii/static/js/2.df63968c.chunk.js.map",
     "index.html": "/burger-kawaii/index.html",
-    "precache-manifest.b63cacb963fe03fb0e0e65fc36f55c88.js": "/burger-kawaii/precache-manifest.b63cacb963fe03fb0e0e65fc36f55c88.js",
+    "precache-manifest.2a0ba47a4a31310c8510c031b603668c.js": "/burger-kawaii/precache-manifest.2a0ba47a4a31310c8510c031b603668c.js",
     "service-worker.js": "/burger-kawaii/service-worker.js",
-    "static/css/main.51d50eb0.chunk.css.map": "/burger-kawaii/static/css/main.51d50eb0.chunk.css.map",
+    "static/css/main.5fc35505.chunk.css.map": "/burger-kawaii/static/css/main.5fc35505.chunk.css.map",
     "static/media/breackfast-choose.png": "/burger-kawaii/static/media/breackfast-choose.20e74f95.png",
     "static/media/button-breakfast.png": "/burger-kawaii/static/media/button-breakfast.7b06742c.png",
     "static/media/button-dinner.png": "/burger-kawaii/static/media/button-dinner.b14b1e7b.png",
     "static/media/button-enter.png": "/burger-kawaii/static/media/button-enter.00fea45a.png",
     "static/media/button-sendtokitchen.png": "/burger-kawaii/static/media/button-sendtokitchen.2ded62d0.png",
     "static/media/button-waitress.png": "/burger-kawaii/static/media/button-waitress.fa05feff.png",
-    "static/media/circle.png": "/burger-kawaii/static/media/circle.8cfb6f15.png",
-    "static/media/dinner-choose.png": "/burger-kawaii/static/media/dinner-choose.5959d94b.png"
+    "static/media/chef.png": "/burger-kawaii/static/media/chef.e5e7c8d6.png",
+    "static/media/dinner-choose.png": "/burger-kawaii/static/media/dinner-choose.5959d94b.png",
+    "static/media/logo.png": "/burger-kawaii/static/media/logo.f3f114f5.png"
   }
 }
