@@ -49,7 +49,7 @@ class ButtonProductBreakfast extends Component {
         .then(response => response.json())
         .then(data => {
             this.setState({products: data})
-          //console.log(data)
+            console.log(data)
         })
         .catch(error => console.error(error))
   }
@@ -58,11 +58,11 @@ class ButtonProductBreakfast extends Component {
         return (
             <div >
                 {this.state.products.map((item) =>
-                    <div className="cointenerButtonProduct" key={item.id}>
+                    <div className="cointenerButtonProduct" key={item._id}>
                         <img src={item.img} alt={item.dish} className="imgButtonProduct"></img>
                         <p className="nameButtonProduct">{item.dish}</p>
                         <p className="nameButtonProduct">${item.price}</p>
-                        <button className="buttonPlusProduct" onClick={() => this.props.getValuesMethod(item.id)}>+</button>
+                        <button className="buttonPlusProduct" onClick={() => this.props.getValuesMethod(item._id)}>+</button>
                     </div>
                 )}
             </div>
