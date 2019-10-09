@@ -20,31 +20,31 @@ class Breakfast extends Component {
         };
     }
 
-    componentDidMount() {
-        fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
-        })
-            .then(response => response.json())
-            .then(data => {
-                this.setState({ products: data })
-                //console.log(data)
-            })
-            .catch(error => console.error(error))
-    }
-    //Obtener valores
-    getValues = (id) => {
-        const data = this.state.products.find(item => item._id === id)
-        //menu.breakfast.find(item => item.id === id)
-        const listConc = this.state.list
-        listConc.push({
-            dish: data.dish,
-            price: data.price,
-            _id: data._id
-        })
-        this.setState({
-            total: +this.state.total + +data.price,
-            list: listConc
-        });
-    }
+
+  componentDidMount() {
+    fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
+    })
+    .then(response => response.json())
+    .then(data => {
+        this.setState({products: data})
+      //console.log(data)
+    })
+    .catch(error => console.error(error))
+}
+  //Obtener valores
+  getValues = (_id) => {
+    const data = this.state.products.find(item => item._id === _id)
+    //menu.breakfast.find(item => item.id === id)
+    const listConc = this.state.list  
+    listConc.push({
+      dish: data.dish, 
+      price: data.price
+    })
+    this.setState({
+      total: +this.state.total + +data.price,
+      list: listConc
+    });
+  }
 
     removeValues = (index) => {
         const listConc = this.state.list
