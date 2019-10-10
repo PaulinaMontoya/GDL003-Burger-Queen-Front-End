@@ -18,9 +18,8 @@ class ComandaBreakfast extends Component {
     )
     let toMongo = {
       table: table,
-      dishes: dishes,
-      total: total
-      
+      total: total,
+      dishes: dishes
     }
     console.log(toMongo)
     /*axios
@@ -39,7 +38,7 @@ class ComandaBreakfast extends Component {
             },
         })
         .then(res => res.json())
-        .then(data => (data));
+        .then(data => console.log(data));
   }
   
   render() {
