@@ -28,7 +28,7 @@ class ComandaBreakfast extends Component {
       .catch(err => {
         console.error(err);
       });*/
-      fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/orders', {
+      fetch('https://pacific-sands-67249.herokuapp.com/orders', {
             method: 'POST',
             body: JSON.stringify(toMongo),
             headers: {
