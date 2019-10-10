@@ -18,8 +18,9 @@ class ComandaBreakfast extends Component {
     )
     let toMongo = {
       table: table,
-      total: total,
-      dishes: dishes
+      dishes: dishes,
+      total: total
+      
     }
     console.log(toMongo)
     /*axios
@@ -28,7 +29,7 @@ class ComandaBreakfast extends Component {
       .catch(err => {
         console.error(err);
       });*/
-      fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/orders', {
+      fetch('https://pacific-sands-67249.herokuapp.com/orders', {
             method: 'POST',
             body: JSON.stringify(toMongo),
             headers: {
@@ -38,7 +39,7 @@ class ComandaBreakfast extends Component {
             },
         })
         .then(res => res.json())
-        .then(data => console.log(data));
+        .then(data => (data));
   }
   
   render() {

@@ -5,7 +5,7 @@ import '../Styles/dinnerMenu.css';
 import HeaderMenu from './HeaderMenu.js';
 import ButtonProduct from './ButtonProduct.js';
 import Comanda from './Comanda.js';
-import menu from "../menuData.js";
+//import menu from "../menuData.js";
 //import classicBurger from '../imgs/dinner-classicburger.png';
 import '../Styles/buttonProduct.css';
 
@@ -14,13 +14,25 @@ class Dinner extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      products: [],
       total: 0,
       list: []
     };
   }
+
+  componentDidMount() {
+    fetch('https://pacific-sands-67249.herokuapp.com/menuDinner', {
+    })
+    .then(response => response.json())
+    .then(data => {
+        this.setState({products: data})
+      //console.log(data)
+    })
+    .catch(error => console.error(error))
+}
   //Obtener valores
-  getValues = (id) => {
-    const data = menu.datos.find(item => item.id === id)
+  getValues = (_id) => {
+    const data = this.state.products.find(item => item._id === _id)
 
     const listConc = this.state.list
 

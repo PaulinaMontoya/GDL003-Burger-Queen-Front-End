@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../Styles/buttonProduct.css';
 //import classicBurger from '../imgs/dinner-classicburger.png';
 //import menu from "../menuData.js";
-//import { thisTypeAnnotation } from '@babel/types';
+
 
 
 class ButtonProductBreakfast extends Component {
@@ -41,11 +41,11 @@ class ButtonProductBreakfast extends Component {
     */
 
     componentDidMount() {
-        fetch('http://172.17.33.47:8080/menuBreakfast', {
+        fetch('https://pacific-sands-67249.herokuapp.com/menuBreakfast', {
            // method: 'GET',
             //body: JSON.stringify(toMongo),
            headers: {
-              Token: "pM170290aM291287mR270983dP160591",
+            Authorization: "pM170290aM291287mR270983dP160591",
               //mode: 'no-cors',
               //'Content-Type': 'application/json'
             },

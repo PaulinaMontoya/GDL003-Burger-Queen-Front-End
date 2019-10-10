@@ -22,7 +22,7 @@ class Breakfast extends Component {
 
 
   componentDidMount() {
-    fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
+    fetch('https://pacific-sands-67249.herokuapp.com/menuBreakfast', {
     })
     .then(response => response.json())
     .then(data => {
