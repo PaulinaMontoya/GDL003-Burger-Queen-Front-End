@@ -17,9 +17,10 @@ class ComandaBreakfast extends Component {
       dishes.push(item.dish)
     )
     let toMongo = {
-      table: table,
-      total: total,
-      dishes: dishes
+      table: parseInt(table),
+      dishes: dishes.join(", "),
+      total: total
+      
     }
     console.log(toMongo)
     /*axios
@@ -28,17 +29,20 @@ class ComandaBreakfast extends Component {
       .catch(err => {
         console.error(err);
       });*/
+      console.log(JSON.stringify(toMongo))
       fetch('https://pacific-sands-67249.herokuapp.com/orders', {
             method: 'POST',
-            body: JSON.stringify(toMongo),
             headers: {
-              Authorization: "pM170290aM291287mR270983dP160591",
+              'Authorization': "pM170290aM291287mR270983dP160591",
               //mode: 'no-cors',
-              //'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
             },
+            body: JSON.stringify(toMongo),
         })
         .then(res => res.json())
-        .then(data => console.log(data));
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
   }
   
   render() {
@@ -63,6 +67,5 @@ class ComandaBreakfast extends Component {
       </div>
     );
   }
-}
-
+ }
 export default ComandaBreakfast;

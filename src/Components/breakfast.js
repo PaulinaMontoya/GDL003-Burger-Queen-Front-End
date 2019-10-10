@@ -18,7 +18,10 @@ class Breakfast extends Component {
        };
    }
  componentDidMount() {
-   fetch('https://gdl003-burger-queen-back-end.nienorloth.now.sh/menuBreakfast', {
+   fetch('https://pacific-sands-67249.herokuapp.com/menuBreakfast', {
+    headers: {
+      Authorization: "pM170290aM291287mR270983dP160591"
+    }
    })
    .then(response => response.json())
    .then(data => {
@@ -36,11 +39,15 @@ class Breakfast extends Component {
      dish: data.dish,
      price: data.price
    })
+   //console.log(this.state.list)
+
    this.setState({
      total: +this.state.total + +data.price,
      list: listConc
    });
+   
  }
+ 
    removeValues = (index) => {
        const listConc = this.state.list
        const price = listConc[index].price
