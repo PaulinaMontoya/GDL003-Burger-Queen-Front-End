@@ -28,7 +28,7 @@ class Comanda extends Component {
             body: JSON.stringify(toMongo),
             headers: {
               Authorization: "pM170290aM291287mR270983dP160591",
-              //mode: 'no-cors',
+              mode: 'no-cors',
               //'Content-Type': 'application/json'
             },
         })

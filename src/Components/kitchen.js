@@ -12,8 +12,6 @@ class Kitchen extends Component {
                 <HeaderKitchen />
                 <div className="cointenerKitchenCards">
                 <KitchenCard />
-                <KitchenCard />
-                <KitchenCard />
                 </div>
 
             </div>
