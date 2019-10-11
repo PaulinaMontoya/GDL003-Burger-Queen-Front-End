@@ -15,7 +15,7 @@ class KitchenCard extends Component {
 
         fetch('https://pacific-sands-67249.herokuapp.com/orders', {
             headers: {
-                'Authorization': "pM170290aM291287mR270983dP160591"
+                Authorization: "pM170290aM291287mR270983dP160591"
             }
         })
             .then(response => response.json())
@@ -49,16 +49,17 @@ class KitchenCard extends Component {
 
     render() {
         return (
-            <div >
+            <div className="cointenerKitchenCards">
                 {this.state.order.map((item, index) =>
 
                     <div className="cointenerCard" key={item._id}>
+                         <p className="tableNumber">Table: {item.table}</p>
                         {item.dishes.map((dish) =>
-                            <li>{dish}</li>)}
-                        <p className="tableNumber">Table: {item.table}</p>
-                        <ul>
-                            <li className="listCard"> ${item.total}</li>
-                        </ul>
+                          <p className="listCard" >{dish}</p>
+                        )}
+                          
+                        <p className="totalKitchen">Total ${item.total}</p>
+                        
                         <img src={buttonDone} alt="" className="buttonDone" onClick={() => this.doneOrder(item._id, index)}></img>
                     </div>
                 )}
