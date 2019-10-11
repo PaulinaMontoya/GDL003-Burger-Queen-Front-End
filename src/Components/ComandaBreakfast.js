@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../Styles/comandaList.css';
 import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class ComandaBreakfast extends Component {
   constructor(props) {
@@ -41,9 +41,8 @@ class ComandaBreakfast extends Component {
   AlertToKitchen() {
     alert("Your order have been sent to kitchen!!!") 
    }
-   refreshPage() {
-    window.location.reload(false);
-   }
+   //refreshPage() {
+   // window.location.reload(false);}
   render() {
     return (
       <div className="cointenerComanda">
@@ -60,11 +59,11 @@ class ComandaBreakfast extends Component {
             </ul>
             <p className="total">Total: ${this.props.total}</p>
           </div>
-          
+          <Link to="/kitchen">
             <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen" onClick={ () => this.writeMongo(this.props.list, this.props.total,
-              document.getElementById("table").value , this.refreshPage(), this.AlertToKitchen())   
+              document.getElementById("table").value, this.AlertToKitchen())   
            }></img>
-       
+       </Link>
         </form>
       </div>
     );
