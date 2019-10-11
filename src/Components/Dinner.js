@@ -6,9 +6,7 @@ import HeaderMenu from './HeaderMenu.js';
 import ButtonProduct from './ButtonProduct.js';
 import Comanda from './Comanda.js';
 //import menu from "../menuData.js";
-//import classicBurger from '../imgs/dinner-classicburger.png';
 import '../Styles/buttonProduct.css';
-
 
 class Dinner extends Component {
   constructor(props) {
@@ -22,7 +20,10 @@ class Dinner extends Component {
 
   componentDidMount() {
     fetch('https://pacific-sands-67249.herokuapp.com/menuDinner', {
-    })
+      headers: {
+        Authorization: "pM170290aM291287mR270983dP160591"
+      }
+  })
     .then(response => response.json())
     .then(data => {
         this.setState({products: data})
@@ -35,7 +36,6 @@ class Dinner extends Component {
     const data = this.state.products.find(item => item._id === _id)
 
     const listConc = this.state.list
-
     listConc.push({
       dish: data.dish,
       price: data.price
@@ -57,13 +57,11 @@ class Dinner extends Component {
     })
   }
 
-
   render() {
     return (
       <div className="headerMenu">
         <HeaderMenu />
         <div className="cointenerComandaMenuDinner">
-
           <div className="buttonAndComanda">
             <div className="cointenerButtonsDinner">
               <p className="txtDinnerMenu"> Dinner Menu {this.state.count}</p>

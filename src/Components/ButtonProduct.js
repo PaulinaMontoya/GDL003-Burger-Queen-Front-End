@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import '../Styles/buttonProduct.css';
-//import classicBurger from '../imgs/dinner-classicburger.png';
-//import menu from "../menuData.js";
-
 
 class ButtonProduct extends Component {
 
@@ -15,12 +12,9 @@ class ButtonProduct extends Component {
 
   componentDidMount() {
     fetch('https://pacific-sands-67249.herokuapp.com/menuDinner', {
-       // method: 'GET',
-        //body: JSON.stringify(toMongo),
+
        headers: {
         Authorization: "pM170290aM291287mR270983dP160591",
-          //mode: 'no-cors',
-          //'Content-Type': 'application/json'
         },
     })
     .then(response => response.json())
