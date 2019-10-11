@@ -16,7 +16,7 @@ class Home extends Component{
         <p className="userNameTxt">Write your User Name</p>
         <input className="userName" type="text"></input>
         <br/>
-        <Link to="/intro">
+        <Link to={{ pathname: '/intro', userName: "Name" }}>
           <img src={buttonEnter} alt="" className="buttonsHome"></img>
         </Link>
       </div>

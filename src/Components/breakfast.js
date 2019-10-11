@@ -63,7 +63,7 @@ class Breakfast extends Component {
                <HeaderMenu />
                <div className="cointenerComandaMenuDinner">
                    <div className="buttonAndComanda">
-                       <div>
+                       <div> 
                            <p className="txtDinnerMenu"> Breakfast Menu {this.state.count}</p>
                            <ButtonProductBreakfast getValuesMethod={this.getValues}
                                submitValuesMethod={this.submitValues} />

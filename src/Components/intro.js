@@ -8,11 +8,19 @@ import HeaderIntro from '../Components/HeaderIntro.js';
 import '../Styles/intro.css';
 
 class Intro extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: this.props.location.Name
+    }
+    
+  }
+
   render() {
     return (
       <div>
         <HeaderIntro/>
-          <p className="txtWelcome">Welcome XXX</p>
+          <p className="txtWelcome">Welcome {this.props.location.Name}</p>
           <p className="txtIntro">Choose your position </p>
           <div  className="cointenerIntro">
             <div className="wiatressBlock">
