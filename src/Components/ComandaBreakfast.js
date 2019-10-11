@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../Styles/comandaList.css';
 import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
 //import { Link } from 'react-router-dom';
-//import axios from 'axios';
 
 class ComandaBreakfast extends Component {
   constructor(props) {
@@ -23,19 +22,12 @@ class ComandaBreakfast extends Component {
       total: total,
       active: 1
     }
-    //console.log(toMongo)
-    /*axios
-      .post('https://gdl003-burger-queen-back-end.nienorloth.now.sh/orders', toMongo)
-      .then(() => console.log('Uploaded'))
-      .catch(err => {
-        console.error(err);
-      });*/
-    //console.log(JSON.stringify(toMongo))
+    
     fetch('https://pacific-sands-67249.herokuapp.com/orders', {
       method: 'POST',
       headers: {
         'Authorization': "pM170290aM291287mR270983dP160591",
-        //mode: 'no-cors',
+  
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
