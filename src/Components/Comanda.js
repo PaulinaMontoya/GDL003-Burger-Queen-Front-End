@@ -22,7 +22,6 @@ class Comanda extends Component {
       dishes: dishes,
       total: total  
     }
-    console.log(toMongo)
   
     fetch('https://pacific-sands-67249.herokuapp.com/orders', {
             method: 'POST',

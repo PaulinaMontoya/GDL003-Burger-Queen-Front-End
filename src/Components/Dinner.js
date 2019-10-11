@@ -5,7 +5,6 @@ import '../Styles/dinnerMenu.css';
 import HeaderMenu from './HeaderMenu.js';
 import ButtonProduct from './ButtonProduct.js';
 import Comanda from './Comanda.js';
-//import menu from "../menuData.js";
 import '../Styles/buttonProduct.css';
 
 class Dinner extends Component {
@@ -27,7 +26,6 @@ class Dinner extends Component {
     .then(response => response.json())
     .then(data => {
         this.setState({products: data})
-      //console.log(data)
     })
     .catch(error => console.error(error))
 }
@@ -59,12 +57,12 @@ class Dinner extends Component {
 
   render() {
     return (
-      <div className="headerMenu">
+      <div className="headerMenu" >
         <HeaderMenu />
-        <div className="cointenerComandaMenuDinner">
-          <div className="buttonAndComanda">
+        <div className="cointenerComandaMenuDinner" >
+          <div className="buttonAndComanda" >
             <div className="cointenerButtonsDinner">
-              <p className="txtDinnerMenu"> Dinner Menu {this.state.count}</p>
+              <p className="txtDinnerMenu" > Dinner Menu {this.state.count}</p>
               <ButtonProduct getValuesMethod={this.getValues}
                 submitValuesMethod={this.submitValues} />
             </div>
