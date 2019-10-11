@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f73371874b4584085fd0a1f954ede5a",
+    "revision": "3de157ebf313ac1b8584520ec100bad9",
     "url": "/burger-kawaii/index.html"
   },
   {
-    "revision": "8236b4ef48244094539b",
+    "revision": "c3efeb12f0a9180d7c7b",
     "url": "/burger-kawaii/static/css/main.6e11295a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-kawaii/static/js/2.df63968c.chunk.js"
   },
   {
-    "revision": "8236b4ef48244094539b",
-    "url": "/burger-kawaii/static/js/main.50628680.chunk.js"
+    "revision": "c3efeb12f0a9180d7c7b",
+    "url": "/burger-kawaii/static/js/main.70db7d86.chunk.js"
   },
   {
     "revision": "f3d2ebb4f9caeb053c18",
