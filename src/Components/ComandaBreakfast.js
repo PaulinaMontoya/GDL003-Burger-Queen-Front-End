@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../Styles/comandaList.css';
 import buttonSendToKitchen from '../imgs/button-sendtokitchen.png';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 //import axios from 'axios';
 
 class ComandaBreakfast extends Component {
@@ -11,6 +11,7 @@ class ComandaBreakfast extends Component {
       products: this.props.list
     }
   }
+
   writeMongo(data, total, table) {
     let dishes = []
     data.map((item) =>
@@ -44,6 +45,13 @@ class ComandaBreakfast extends Component {
       .then(data => console.log(data))
       .catch(err => console.log(err));
   }
+  refreshPage() {
+   window.location.reload(false);
+  }
+
+  AlertToKitchen() {
+    alert("Your order have been sent to kitchen!!!") 
+   }
 
   render() {
     return (
@@ -61,10 +69,11 @@ class ComandaBreakfast extends Component {
             </ul>
             <p className="total">Total: ${this.props.total}</p>
           </div>
-          <Link to="/kitchen">
-            <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen" onClick={() => this.writeMongo(this.props.list, this.props.total,
-              document.getElementById("table").value)}></img>
-          </Link>
+          
+            <img src={buttonSendToKitchen} alt="" className="buttonSendToKitchen" onClick={ () => this.writeMongo(this.props.list, this.props.total,
+              document.getElementById("table").value , this.refreshPage(), this.AlertToKitchen())   
+           }></img>
+       
         </form>
       </div>
     );
