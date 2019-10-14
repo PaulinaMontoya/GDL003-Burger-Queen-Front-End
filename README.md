@@ -45,7 +45,7 @@ Como cocinero necesito una plataforma que muestre los pedidos tomados por los me
 ## **Back-end**
 Restful API para el sistema de comandas del restaurante Burger Kawaii:
 
-[API de comandas](https://github.com/DenissePeralta/GDL003-Burger-Queen-Back-End)
+[Kawaii API](https://github.com/DenissePeralta/GDL003-Burger-Queen-Back-End)
 
 ## **Recursos utilizados**
 
