@@ -12,8 +12,8 @@
     margin: 0 auto;
 }
 .logo{
-    margin: 30px 0 0 0;
-    max-width: 25%;
+    margin: 70px 0 0 0;
+    max-width: 35%;
     text-align: center;
 }
 .userName{
@@ -21,7 +21,7 @@
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
-    width: 30%;
+    width: 40%;
     padding: 20px;
     border-radius: 50px;
     border: solid #EAD4B0;
@@ -30,5 +30,5 @@
 }
 .buttonsHome{
     margin-top: 20px;
-    width: 200px;
+    width: 25%;
 }

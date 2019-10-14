@@ -6,34 +6,34 @@
     font-family: 'Neucha';
     font-size: 45px;
     color: #58524C;
-    margin: 55px 0 0 0;
+    margin: 95px 0 0 0;
 }
 .cointenerMenu{
     text-align: center;
-    display: flex;
     margin-top: 25px;
+    position: absolute;
+    width: 100%;
+    margin: 25px auto;
 }
-.txtMenu{
-    font-family: 'Neucha';
-    font-size: 35px;
-    color: #58524C;
+.goBreakfastMenu{
+    float: left;
+    width: 30%;
+    margin: 40px 0 0 150px;
+}
+.menuBreackfastImg{
+    width: 250px;
+    height: auto;
+}
+.goDinnerMenu{
+    width: 30%;
+    float: right;
+    margin: 20px 150px 0 0;
+}
+.menuDinnerImg{
+    width: 250px;
+    height: auto;
 }
 .buttonsMenu{
     margin-top: 20px;
-    width: 200px;
-}
-.goBreakfastMenu{
-    margin: 0 50px 0 500px;
-}
-.menuBreackfastImg{
-    margin-top: 25px;
-    width: 200px;
-    text-align: center;
-}
-.goDinnerMenu{
-    margin: 10px 0 0 50px;
-}
-.menuDinnerImg{
-    width: 200px;
-    text-align: center;
+    width: 80%;
 }

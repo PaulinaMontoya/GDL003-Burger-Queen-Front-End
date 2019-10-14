@@ -1,74 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Burger Kawaii**
 
-## Available Scripts
+Un pequeño restaurante de hamburguesas con el concepto Kawaii está creciendo y necesita una interfaz en la que los meseros puedan tomar pedidos usando una tablet para enviar las comandas a cocina en tiempo real y que el cocinero pueda ver los pedidos organizados cronologicamente.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Historias de usuarios**
+*HU: Historia de Usuario.
 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+**Usuario 1**
 
-### `npm test`
+Como mesera necesito una plataforma inalámbrica para poder generar comandas de cada mesa y que se envíen los pedidos a cocina en tiempo real.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* HU1: Elegir el rol de mesera.  
+* HU2: Elegir el menú según el horario (Breafast y Dinner).  
+* HU3: Poder seleccionar los productos del menú y que se genere una comanda con la lista de pedidos.  
+* HU4: Poder eliminar productos de la lista generada en la comanda.  
+* HU5: Mostrar el precio total de todos los productos seleccionados.  
+* HU6: Mandar la comanda a cocina.  
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Usuario 2**
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Como cocinero necesito una plataforma que muestre los pedidos tomados por los meseros y que se organicen por hora de creación.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* HU1: Elegir el rol de cocinero.  
+* HU2: Visualizar la lista de pedidos mandados a cocina por los meseros.   
+* HU3: Que se organicen las comandas por hora de creación donde el último pedido se mande al final y el  pedido mas viejo esté al principio.  
+* HU4: Al finalizar el pedido de una comanda que se eliminen de la pantalla.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Prototipos**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Prototipo de baja fidelidad**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](https://i.ibb.co/qD9G261/01-prototipobaja1.png)
+![](https://i.ibb.co/DGGZNpj/02-prototipobaja2.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### **Prototipo de alta fidelidad**
 
-## Learn More
+![](https://i.ibb.co/TWtfWL3/03-prototipo-Alta1.png)
+![](https://i.ibb.co/Xb3pwLY/04-prototipo-Alta2.png)
+![](https://i.ibb.co/y5MVfDG/05-prototipo-Alta3.png)
+![](https://i.ibb.co/K2T5kkv/06-prototipo-Alta4.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## **Back-end**
+Restful API para el sistema de comandas del restaurante Burger Kawaii:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[API de comandas](https://github.com/DenissePeralta/GDL003-Burger-Queen-Back-End)
 
-### Code Splitting
+## **Recursos utilizados**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* Create-React-App
+* React-Router
+* Vanilla CSS3
+* Fetch
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+__________________________________________
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+Proyecto realizado durante el bootcamp de Laboratoria (2019)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Integrantes:
 
-### Deployment
+* [Andrea Magallanes](https://github.com/anndy9192)
+* [Denisse Peralta](https://github.com/DenissePeralta)
+* [Mariana Rascon](https://github.com/Nienorloth)
+* [Paulina Montoya](https://github.com/PaulinaMontoya)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-* [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [Babel](https://babeljs.io/)
-* [webpack](https://webpack.js.org/)
-
-hola

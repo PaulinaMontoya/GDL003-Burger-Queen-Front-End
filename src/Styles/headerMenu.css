@@ -2,19 +2,23 @@
 
 .cointenerHeaderMenu{
     background: #EAD4B0;
+    padding: 40px 65px;
     display: flex;
-    padding: 30px;
-}
-.buttonsHeader{
-    margin: 20px;
-
-}
-.buttonHeaderMenu{
-    width: 150px;
-    margin: 0 10px 0 10px;
+    width: auto;
 }
 .userHeaderMenu{
     font-family: 'Neucha';
     font-size: 30px;
-    color: #58524C;  
+    color: #58524C; 
+    width: 30%; 
+    margin: 0;
+}
+.buttonsHeader{
+    width: 90%;
+    display: inline-block;
+}
+.buttonHeaderMenu{
+    margin: 5px;
+    float: right;
+    width: 20%;
 }

@@ -6,6 +6,7 @@ import HeaderMenu from './HeaderMenu.js';
 import ButtonProduct from './ButtonProduct.js';
 import Comanda from './Comanda.js';
 import '../Styles/buttonProduct.css';
+import Footer from '../Components/Footer.js';
 
 class Dinner extends Component {
   constructor(props) {
@@ -72,6 +73,7 @@ class Dinner extends Component {
               list={this.state.list} />
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

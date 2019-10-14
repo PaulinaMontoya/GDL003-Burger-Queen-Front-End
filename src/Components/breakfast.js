@@ -7,6 +7,7 @@ import HeaderMenu from './HeaderMenu.js';
 import '../Styles/buttonProduct.css';
 import ButtonProductBreakfast from './ButtonProductBreakfast';
 import ComandaBreakfast from './ComandaBreakfast';
+import Footer from '../Components/Footer.js';
 
 class Breakfast extends Component {
    constructor(props) {
@@ -73,6 +74,7 @@ class Breakfast extends Component {
                            list={this.state.list} />
                    </div>
                </div>
+               <Footer />
            </div>
        );
    }

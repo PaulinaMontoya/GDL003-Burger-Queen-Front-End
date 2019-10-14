@@ -17,15 +17,15 @@
 }
 .cointenerIntro{
     text-align: center;
-    display: flex;
     margin-top: 25px;
-}
-.buttonsIntro{
-    margin-top: 20px;
-    width: 200px;
+    position: absolute;
+    width: 100%;
+    margin: 25px auto;
 }
 .wiatressBlock{
-    margin: 20px 100px 0 500px;
+    float: left;
+    width: 30%;
+    margin: 15px 0 0 150px;
 }
 .waitressImg{
     width: 110px;
@@ -33,9 +33,15 @@
   
 }
 .chefBlock{
-   margin: 0px 0 0 0;
+    width: 30%;
+    float: right;
+   margin: 0 150px 0 0;
 }
 .chefImg{
     width: 100px;
     height: auto;
+}
+.buttonsIntro{
+    margin-top: 20px;
+    width: 80%;
 }

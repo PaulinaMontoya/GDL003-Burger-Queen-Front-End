@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+
+.cointenerFooter{
+  background: #EAD4B0;
+  padding: 20px;
+  text-align: center;
+margin-top: 100px;
+ bottom: 0;
+  width: auto;
+
+}
+.namesTeam{
+  display: inline-block;
+}
+.name{
+  font-family: 'Neucha';
+  font-size: 20px;
+  color: #58524C; 
+  margin: 5px;
+  text-decoration: none;
+  cursor: poi;
+}
