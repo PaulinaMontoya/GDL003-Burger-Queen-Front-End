@@ -1,6 +1,6 @@
 # **Burger Kawaii**
 
-Un pequeño restaurante de hamburguesas con el concepto Kawaii está creciendo y necesita una interfaz en la que los meseros puedan tomar pedidos usando una tablet para enviar las comandas a cocina en tiempo real y que el cocinero pueda ver los pedidos organizados cronologicamente.
+Un pequeño restaurante de hamburguesas con el concepto Kawaii está creciendo y necesita una aplicación en la que los meseros puedan tomar pedidos usando una tablet para enviar las comandas a cocina en tiempo real y que el cocinero pueda ver los pedidos organizados cronologicamente.
 
 ## **Historias de usuarios**
 *HU: Historia de Usuario.
